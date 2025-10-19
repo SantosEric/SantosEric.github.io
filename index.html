@@ -1,66 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eric Santos | Cybersecurity Enthusiast</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eric Santos | Cybersecurity Portfolio</title>
   <style>
+    /* Base styling */
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #0d1117;
       color: #c9d1d9;
-      text-align: center;
       margin: 0;
       padding: 0;
-    }
-    header {
-      padding: 100px 20px;
-    }
-    h1 {
-      font-size: 2.5rem;
-      color: #58a6ff;
-    }
-    p {
-      font-size: 1.1rem;
-      max-width: 650px;
-      margin: 20px auto;
       line-height: 1.6;
     }
+
+    header {
+      text-align: center;
+      padding: 100px 20px 60px;
+    }
+
+    h1 {
+      font-size: 2.6rem;
+      color: #58a6ff;
+    }
+
+    h2 {
+      color: #58a6ff;
+      margin-top: 60px;
+      text-align: center;
+    }
+
+    p, ul {
+      max-width: 750px;
+      margin: 10px auto;
+      font-size: 1.1rem;
+      text-align: center;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin: 6px 0;
+    }
+
+    section {
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    hr {
+      width: 60%;
+      margin: 50px auto;
+      border: 0.5px solid #30363d;
+    }
+
     footer {
-      margin-top: 80px;
-      font-size: 0.9rem;
+      text-align: center;
       color: #8b949e;
+      padding: 40px 0;
+      font-size: 0.9rem;
+    }
+
+    /* Project cards */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: 30px auto;
+    }
+
+    .card {
+      background-color: #161b22;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: #58a6ff;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 1rem;
+      text-align: left;
     }
   </style>
 </head>
+
 <body>
+  <!-- Intro -->
   <header>
     <h1>Hi, I’m Eric Santos 👋</h1>
     <p>
-      I’m an aspiring <strong>Cybersecurity Professional</strong> who’s passionate about protecting systems,
+      Aspiring <strong>Cybersecurity Professional</strong> passionate about defending systems,
       analyzing threats, and continuously learning how technology and security intersect.
-      My goal is to build a strong foundation in network defense, automation, and digital forensics while developing real-world, hands-on experience.
-    </p>
-    <section>
-<hr style="width: 60%; margin: 40px auto; border: 0.5px solid #30363d;">
-  <h2>About Me</h2>
-  <p>
-    I’m currently learning the fundamentals of <strong>networking, Linux, and Python</strong> to build a strong foundation in cybersecurity.
-    I enjoy experimenting with home labs, analyzing network traffic, and exploring real-world attack simulations to understand how defenses work.
-  </p>
-<section>
-<hr style="width: 60%; margin: 40px auto; border: 0.5px solid #30363d;">
-  <h2>Skills & Tools</h2>
-  <p>Linux • Python • Splunk • Wireshark • Nmap • Burp Suite • Network Fundamentals</p>
-</section>
-<hr style="width: 60%; margin: 40px auto; border: 0.5px solid #30363d;">
-    <p>
-      Here, you’ll find my projects, learning progress, and the skills I’m sharpening along the way.
+      My goal is to build a strong foundation in network defense, automation, and digital forensics
+      through hands-on projects and real-world exploration.
     </p>
   </header>
+
+  <hr>
+
+  <!-- About -->
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I’m currently learning the fundamentals of <strong>networking, Linux, and Python</strong> to strengthen my foundation in cybersecurity.
+      I enjoy experimenting with home labs, analyzing network traffic, and exploring how cyberattacks happen in order to learn how to prevent them.
+    </p>
+  </section>
+
+  <hr>
+
+  <!-- Skills -->
+  <section>
+    <h2>Skills & Tools</h2>
+    <p>Linux • Python • Git • Wireshark • Nmap • Burp Suite • Networking • Cloud Fundamentals (AWS)</p>
+  </section>
+
+  <hr>
+
+  <!-- Projects -->
+  <section>
+    <h2>Featured Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>🔍 Network Traffic Analysis Lab</h3>
+        <p>
+          Captured and analyzed packets using <strong>Wireshark</strong> to identify suspicious activity and
+          understand normal vs. abnormal traffic behavior.
+        </p>
+        <a href="https://github.com/SantosEric/NetworkTrafficLab" target="_blank">View on GitHub →</a>
+      </div>
+
+      <div class="card">
+        <h3>🛠️ Python Automation Script</h3>
+        <p>
+          Developed a Python script to automate log parsing for failed login attempts and generate simple reports for alerting.
+        </p>
+        <a href="https://github.com/SantosEric/LogAutomation" target="_blank">View on GitHub →</a>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <!-- Learning -->
+  <section>
+    <h2>Currently Learning</h2>
+    <ul>
+      <li>🔹 Building a cybersecurity home lab (VMs & VirtualBox)</li>
+      <li>🔹 Practicing network analysis with Wireshark</li>
+      <li>🔹 Automating tasks with Python scripts</li>
+      <li>🔹 Studying for CompTIA Security+ certification</li>
+    </ul>
+  </section>
+
+  <hr>
+
+  <!-- Contact -->
+  <section>
+    <h2>Connect</h2>
+    <p>
+      <a href="https://github.com/SantosEric" target="_blank">GitHub</a> |
+      <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank">LinkedIn</a> |
+      <a href="mailto:youremail@gmail.com">Email Me</a>
+    </p>
+  </section>
+
   <footer>
     © 2025 Eric Santos | Built with 💻 and curiosity
   </footer>
 </body>
 </html>
-<hr style="width: 60%; margin: 40px auto; border: 0.5px solid #30363d;">
